@@ -1,0 +1,1 @@
+export let UrlApli = "http://localhost:8080/"

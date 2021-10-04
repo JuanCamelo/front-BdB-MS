@@ -30,7 +30,8 @@ import {
   DxLookupModule,
   DxTooltipModule,
   DxSliderModule,
-  DxGalleryModule
+  DxGalleryModule,
+  DxLoadPanelModule
 } from 'devextreme-angular';
 
 
@@ -38,13 +39,12 @@ import {
 @NgModule({
   declarations: [],
   imports: [ 
-    DxDrawerModule, 
+  DxDrawerModule, 
   DxToolbarModule,
   DxBoxModule, DxPopoverModule,
   DxProgressBarModule,
   DxFileUploaderModule, 
   DxPopupModule,
-  DxDataGridModule,
   DxFormModule,
   DxButtonModule,
   DxTextBoxModule,
@@ -68,7 +68,9 @@ import {
   DxLookupModule,
   DxTooltipModule,
   DxSliderModule,
-  DxGalleryModule
+  DxGalleryModule,
+  DxLoadPanelModule,
+  DxDataGridModule
   ],
   exports: [   
     DxDrawerModule, 
@@ -77,7 +79,6 @@ import {
   DxProgressBarModule,
   DxFileUploaderModule, 
   DxPopupModule,
-  DxDataGridModule,
   DxFormModule,
   DxButtonModule,
   DxTextBoxModule,
@@ -101,7 +102,9 @@ import {
   DxLookupModule,
   DxTooltipModule,
   DxSliderModule,
-  DxGalleryModule,  
+  DxGalleryModule,
+  DxLoadPanelModule,
+  DxDataGridModule
   ]
 })
 export class DevextrmeModule { }

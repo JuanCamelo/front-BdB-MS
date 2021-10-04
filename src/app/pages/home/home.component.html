@@ -1,1 +1,16 @@
-<p>home works!</p>
+
+   <dx-load-panel 
+    [position]="loadPanelPosition" 
+    [visible]="isLoading">
+    </dx-load-panel> 
+    <dx-data-grid id="gridContainer" keyExpr="employeeid" [dataSource]="employees" [showBorders]="true"
+        [repaintChangesOnly]="true" (onSaving)="onSaving($event)">
+
+        <dxo-editing mode="row" [allowAdding]="true" [allowDeleting]="true" [allowUpdating]="true" 
+            [(editRowKey)]="editRowKey"></dxo-editing> 
+                   
+        <dxi-column dataField="fullname"></dxi-column>
+        <dxi-column dataField="functios"></dxi-column>
+        
+    </dx-data-grid>
+  
